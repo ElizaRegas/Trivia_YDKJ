@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+
+        <meta charset="UTF-8">
+        <title>You Don't Know Jack</title>
+
+        <!-- TELLS PHONES TO DISPLAY AT ACTUAL WIDTHS -->
+        <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+
+        <!-- JQUERY LINK -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+        <!-- CSS LINKS -->
+        <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+        <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+
+        <!-- GOOGLE FONTS -->
+
+    </head>
+
+    <body>
+
+        <header>
+            <h1>You Don't Know Jack</h1>
+        </header>
+
+        <div>
+            <button id="startPage">Click to begin!</button>
+        </div>
+
+        <div id="quizDiv">
+            <div id="questionDiv">Question</div>
+            <div id="answerButtons">
+                <button class="button" id="answerA"></button>
+                <button class="button" id="answerB"></button>
+                <button class="button" id="answerC"></button>
+                <button class="button" id="answerD"></button>
+            </div>
+        </div>
+
+        <div id="resultsDiv">
+            <div>Timer</div>
+            <div>Correct Answers</div>
+            <div>Incorrect Answers</div>
+        </div>
+
+        <!-- WIN MODAL -->
+        <div id="winModal">
+            Correct!
+        </div>
+
+        <!-- LOSE MODAL -->
+        <div id="loseModal">
+            Nope!
+        </div>
+
+        <!-- JAVASCRIPT LINK -->
+        <script src="assets/javascript/app.js"></script>
+
+    </body>
+</html>

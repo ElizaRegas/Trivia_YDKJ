@@ -1,0 +1,9 @@
+#winModal {
+    background-color: green;
+    display: none;
+}
+
+#loseModal {
+    background-color: red;
+    display: none;
+}
