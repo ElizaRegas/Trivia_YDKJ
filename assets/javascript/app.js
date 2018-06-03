@@ -9,6 +9,7 @@ $(document).ready(function() {
     var queNum1;
     var queNum2;
     var queNum3;
+    var queNum4;
     var questionHolderArray;
     var currentQuestion;
     var usedQuestionArray = [];
@@ -16,6 +17,8 @@ $(document).ready(function() {
     var correctAnswer;
     var submittedAnswer;
     var questionOrder;
+    var arrayEmpty = false;
+    var allowButtonClick = true;
 
 // CLICK ON BUTTON TO BEGIN
     $("#startPage").click(function() {
@@ -56,16 +59,18 @@ $(document).ready(function() {
         this.correctAnswer = correctAnswer;
     }
 
+    queNum1 = new QuizQuestionFormat('1', 'Which "Jack was born in secret to a teenaged showgirl, raised to believe that his mother was his sister, and his grandmother was his mother?',
+        'Jack Johnson (Musician)', 'Jack Nicholson (Actor)', 'Jack Dempsey (Boxer)', 'Jack Kerouac (Author)', 'Jack Nicholson (Actor)', '');
+    queNum2 = new QuizQuestionFormat('2', 'Which “Jack” was accepted into a Wisconsin seminary and almost pursued the life of a priest?',
+        'Jack the Ripper (Serial Killer)', 'Jack Kevorkian (Physician)', 'Jack White (Musician)', 'Jack London (Author)', 'Jack White (Musician)', '');
+    queNum3 = new QuizQuestionFormat('3', 'Which “Jack” had parents that were both satellite engineers who worked on the Hubble Space Telescope?',
+        'Jackie Collins (Romance Novelist)', 'Jack Johnson (Boxer)', 'Jackie Kennedy Onassis (Former First Lady, Fashion Icon)', 'Jack Black (Comedian, Actor)', 'Jack Black (Comedian, Actor)', '');
+    queNum4 = new QuizQuestionFormat('4', 'Which “Jack” is, in addition to English, also fluent in Italian, French, and Spanish?',
+        'Jackie Kennedy Onassis (Former First Lady, Fashion Icon)', 'Jackie Chan (Martial Artist, Actor)', 'Jack Nicklaus (Golfer)', 'Jack Osborne (Reality Television Star)', 'Jackie Kennedy Onassis (Former First Lady, Fashion Icon)',)
+
     // SELECT A QUESTION
     function shuffleQuestions() {
-        queNum1 = new QuizQuestionFormat('1', 'Which "Jack was born in secret to a teenaged showgirl, raised to believe that his mother was his sister, and his grandmother was his mother?',
-            'Jack Johnson (Musician)', 'Jack Nicholson (Actor)', 'Jack Dempsey (Boxer)', 'Jack Kerouac (Author)', 'Jack Nicholson (Actor)', '');
-        queNum2 = new QuizQuestionFormat('2', 'Which “Jack” was accepted into a Wisconsin seminary and almost pursued the life of a priest?',
-            'Jack the Ripper (Serial Killer)', 'Jack Kevorkian (Physician)', 'Jack White (Musician)', 'Jack London (Author)', 'Jack White (Musician)', '');
-        queNum3 = new QuizQuestionFormat('3', 'Which “Jack” had parents that were both satellite engineers who worked on the Hubble Space Telescope?',
-            'Jackie Collins (Romance Novelist)', 'Jack Johnson (Boxer)', 'Jackie Kennedy Onassis (Former First Lady, Fashion Icon)', 'Jack Black (Comedian, Actor)', 'Jack Black (Comedian, Actor)', '');
-
-        questionHolderArray = [queNum1, queNum2, queNum3];
+        questionHolderArray = [queNum1, queNum2, queNum3, queNum4];
         questionOrder = fisherYates(questionHolderArray);
         console.log(questionOrder);
     }
@@ -73,11 +78,8 @@ $(document).ready(function() {
 // GENERATE AND DISPLAY A QUESTION
     function firstQuestionDisplay() {
         shuffleQuestions();
-        // questionOrder = [fisherYates(questionHolderArray)];
-        // console.log(questionOrder);
         currentQuestion = questionOrder[0];
         console.log(currentQuestion);
-        // currentQuestion = questionHolderArray[Math.floor(Math.random()*questionHolderArray.length)];
         $("#questionDiv").text(currentQuestion.question);
         $("#answerA").text(currentQuestion.answerA);
         $("#answerB").text(currentQuestion.answerB);
@@ -96,12 +98,34 @@ $(document).ready(function() {
             if (submittedAnswer === correctAnswer) {
                 console.log("correct");
                 winModal();
+                setTimeout(function() {
+                    newQuestion();
+                }, 3000);
             } else {
                 console.log("incorrect");
                 loseModal();
+                setTimeout(function() {
+                    newQuestion();
+                }, 3000);
             }
-            newQuestion();
         });
+    }
+
+    function newQuestion() {
+        questionOrder.shift();
+        console.log(questionOrder);
+
+        if (questionOrder === [-1]) {
+            alert("game over");
+        } else {
+            currentQuestion = questionOrder[0];
+            console.log(currentQuestion);
+            $("#questionDiv").text(currentQuestion.question);
+            $("#answerA").text(currentQuestion.answerA);
+            $("#answerB").text(currentQuestion.answerB);
+            $("#answerC").text(currentQuestion.answerC);
+            $("#answerD").text(currentQuestion.answerD);
+        }
     }
 
     // POP UP MODAL TO CONFIRM A CORRECT ANSWER
@@ -120,15 +144,5 @@ $(document).ready(function() {
         }, 3000)
     }
 
-    function newQuestion() {
-        currentQuestion = currentQuestion.length ++;
-        console.log(currentQuestion);
-        $("#questionDiv").text(currentQuestion.question);
-        $("#answerA").text(currentQuestion.answerA);
-        $("#answerB").text(currentQuestion.answerB);
-        $("#answerC").text(currentQuestion.answerC);
-        $("#answerD").text(currentQuestion.answerD);
-        modalGameContinuation();
-    }
 });
 
