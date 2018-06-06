@@ -25,6 +25,41 @@ $(document).ready(function() {
     let converted;
     let refresh;
 
+    // var jNicholson = $('<img/>', {
+    //     id: 'jackNicholson',
+    //     src: 'assets/images/JackNicholson.jpg',
+    //     alt: 'MyAlt'
+    // });
+    // jNicholson.appendTo($('#answerA'));
+    var jNicholson = $('<img src="assets/images/JackNicholson.jpg">');
+    // jN.append('#answerA');
+    // var jNicholson = $('<img src="assets/images/JackNicholson.jpg"');
+    // jNicholson.append('#answerA');
+    $('#answerA').append(jNicholson);
+    // let jNicholson = (document.getElementById("jackNicholson").src="assets/images/Jack Nicholson.jpg", "assets/images/Jack Nicholson.jpg",
+    // document.body.appendChild(jNicholson));
+    // let imageAnswerArray = [
+    //     { name: 'Jack Nicholson', image: 'assets/images/Jack Nicholson.jpg' },
+    //     { name: 'Jack Osbourne', image: 'assets/images/Jack Osbo urne.jpg' },
+    // ];
+    // let jNicholson = imageAnswerArray[0].appendChild("style", "display", "block")
+    // let jNicholson = [
+    //         document.getElementById("jackNicholson").style.display = "block"
+    //     ];
+    //
+    // let jOsbourne = function() {
+    //     document.getElementById("jackOsbourne").style.display = 'block';
+    // };
+
+    // $('#answerA').innerHTML = '<img src="assets/images/Jack Nicholson.jpg"/>';
+
+    // let jNicholson = document.getElementById("answerA").style.content = "url(../images/Jack Nicholson.jpg)";
+    // $('#answerA').innerHTML = '<img src="assets/images/Jack Nicholson.jpg"/>';
+    // let jNicholson = document.getElementById('#jack').style.display = 'block';
+    // let jNicholson = new Image(200, 200);
+    // jNicholson.src = 'assets/images/Jack Nicholson.jpg';
+    // document.getElementById('jackNicholson').appendChild(jNicholson);
+
 // TIMER OBJECT
     let stopwatch = {
 
@@ -90,6 +125,16 @@ $(document).ready(function() {
         startGame();
     });
 
+// CLICK ON BUTTON TO PAUSE
+    $("#pause").click(function() {
+        stopwatch.stop();
+    });
+
+// CLICK ON BUTTON TO RESUME
+    $("#resume").click(function() {
+        stopwatch.start();
+    });
+
 // PAGE REFRESH
     function refreshPage() {
         refresh = setTimeout("location.reload(true);", 3000);
@@ -131,30 +176,30 @@ $(document).ready(function() {
 
 // QUESTION VARIABLES
     queNum1 = new QuizQuestionFormat('This “Jack” smashed up another driver’s Mercedes in a fit of road-rage with a two-iron.',
-        'Jack Nicholson (Actor)', 'Jack the Ripper (Serial Killer)', 'Jack Gleeson (Actor)', 'Jack Dempsey (Boxer)', 'Jack Nicholson (Actor)', '');
+        jNicholson, 'Jack the Ripper (Serial Killer)', 'Jack Gleeson (Actor)', 'Jack Dempsey (Boxer)', 'Jack Nicholson (Actor)', '');
     queNum2 = new QuizQuestionFormat('This “Jack” was accepted into a Wisconsin seminary and almost pursued the life of a priest.',
-        'Jack Osborne (Reality Television Star)', 'Jack White (Musician)', 'Jack Kevorkian (Physician)', 'Jack Black (Comedian, Actor)', 'Jack White (Musician)', '');
+        'Jack O', 'Jack White (Musician)', 'Jack Kevorkian (Physician)', 'Jack Black (Comedian, Actor)', 'Jack White (Musician)', '');
     queNum3 = new QuizQuestionFormat('This “Jack” had parents who were both satellite engineers.',
         'Jack Dorsey (Inventor, Computer Programmer)', 'Jackie Kennedy Onassis (Former First Lady, Fashion Icon)', 'Jack Black (Comedian, Actor)', 'Jack Johnson (Boxer)', 'Jack Black (Comedian, Actor)', '');
-    queNum4 = new QuizQuestionFormat('This multilingual, Emmy winning “Jack” edited Michael Jackson’s autobiography, Moonwalk.',
-        'Jack Hanna (Conservationist, TV Personality)', 'Jack Nicholson (Actor)', 'Jack Lemmon (Actor)', 'Jackie Kennedy Onassis (Former First Lady, Fashion Icon)', 'Jackie Kennedy Onassis (Former First Lady, Fashion Icon)',);
-    queNum5 = new QuizQuestionFormat('This “Jack” is a former professional surfer.',
-        'Jack Johnson (Musician)', 'Jack Lemmon (Actor)', 'Jack Nicklaus (Golfer)', 'Jackie Collins (Author)', 'Jack Johnson (Musician)', '');
-    queNum6 = new QuizQuestionFormat('This “Jack” also sings, having 20 albums to his credit.',
-        'Jack Hanna (Conservationist, TV Personality)', 'Jackie Chan (Martial Artist, Actor)', 'Jack Osborne (Reality Television Star)', 'Jack Sparrow (Fictional Pirate)', 'Jackie Chan (Martial Artist, Actor)', '');
-    queNum7 = new QuizQuestionFormat('Every single novel this “Jack” authored was a New York Times bestseller.',
-        'Jack Kerouac (Author)', 'Jack London (Author)', 'Jackie Collins (Author)', 'Jack Dorsey (Inventor, Computer Programmer)', 'Jackie Collins (Author)', '');
-    queNum8 = new QuizQuestionFormat('This “Jack” overcame polio at the age of 13.',
-        'Jack Johnson (Boxer)', 'Jack Dempsey (Boxer)', 'Jackie Chan (Martial Artist, Actor)', 'Jack Nicklaus (Golfer)', 'Jack Nicklaus (Golfer)', '');
-    queNum9 = new QuizQuestionFormat('As a teen, this “Jack” worked as an oyster pirate, and was later arrested for vagrancy.',
-        'Jack London (Author)', 'Jack White (Musician)', 'Jack Johnson (Musician)', 'Jack Gleeson (Actor)', 'Jack London (Author)', '');
-    queNum10 = new QuizQuestionFormat('In 1991, Johnny Depp paid $15,000 for a raincoat worn by this “Jack”.',
-        'Jack Sparrow (Fictional Pirate)', 'Jack Kerouac (Author)', 'Jack Kevorkian (Physician)', 'Jack the Ripper (Serial Killer)', 'Jack Kerouac (Author)', '');
-
+    // queNum4 = new QuizQuestionFormat('This multilingual, Emmy winning “Jack” edited Michael Jackson’s autobiography, Moonwalk.',
+    //     'Jack Hanna\n(Conservationist, TV Personality)', 'Jack Nicholson (Actor)', 'Jack Lemmon (Actor)', 'Jackie Kennedy Onassis (Former First Lady, Fashion Icon)', 'Jackie Kennedy Onassis (Former First Lady, Fashion Icon)',);
+    // queNum5 = new QuizQuestionFormat('This “Jack” is a former professional surfer.',
+    //     'Jack Johnson\n(Musician)', 'Jack Lemmon (Actor)', 'Jack Nicklaus (Golfer)', 'Jackie Collins (Author)', 'Jack Johnson (Musician)', '');
+    // queNum6 = new QuizQuestionFormat('This “Jack” also sings, having 20 albums to his credit.',
+    //     'Jack Hanna\n(Conservationist, TV Personality)', 'Jackie Chan (Martial Artist, Actor)', 'Jack Osborne (Reality Television Star)', 'Jack Sparrow (Fictional Pirate)', 'Jackie Chan (Martial Artist, Actor)', '');
+    // queNum7 = new QuizQuestionFormat('Every single novel this “Jack” authored was a New York Times bestseller.',
+    //     'Jack Kerouac\n(Author)', 'Jack London (Author)', 'Jackie Collins (Author)', 'Jack Dorsey (Inventor, Computer Programmer)', 'Jackie Collins (Author)', '');
+    // queNum8 = new QuizQuestionFormat('This “Jack” overcame polio at the age of 13.',
+    //     'Jack Johnson\n(Boxer)', 'Jack Dempsey (Boxer)', 'Jackie Chan (Martial Artist, Actor)', 'Jack Nicklaus (Golfer)', 'Jack Nicklaus (Golfer)', '');
+    // queNum9 = new QuizQuestionFormat('As a teen, this “Jack” worked as an oyster pirate, and was later arrested for vagrancy.',
+    //     'Jack London\n(Author)', 'Jack White (Musician)', 'Jack Johnson (Musician)', 'Jack Gleeson (Actor)', 'Jack London (Author)', '');
+    // queNum10 = new QuizQuestionFormat('In 1991, Johnny Depp paid $15,000 for a raincoat worn by this “Jack”.',
+    //     'Jack Sparrow\n(Fictional Pirate)', 'Jack Kerouac (Author)', 'Jack Kevorkian (Physician)', 'Jack the Ripper (Serial Killer)', 'Jack Kerouac (Author)', '');
 
 // SELECT A QUESTION
     function shuffleQuestions() {
-        questionHolderArray = [queNum1, queNum2, queNum3, queNum4, queNum5, queNum6, queNum7, queNum8, queNum9, queNum10];
+        // questionHolderArray = [queNum1, queNum2, queNum3, queNum4, queNum5, queNum6, queNum7, queNum8, queNum9, queNum10];
+        questionHolderArray = [queNum1, queNum2, queNum3];
         questionOrder = fisherYates(questionHolderArray);
         console.log(questionOrder);
     }

@@ -7,6 +7,13 @@
 
 /* CLASS STYLING */
 
+    .button {
+        text-align: center;
+        width: 16vw;
+        margin: 3vw;
+        height: 8vw;
+    }
+
     .jack {
         width: 8vw;
         height: auto;
@@ -20,6 +27,24 @@
     }
 
 /* ID STYLING */
+
+    #answerA {
+    }
+
+    /*#jackNicholson {*/
+        /*background-image: url("../images/Jack Nicholson.jpg");*/
+        /*width: 5vw;*/
+        /*height: auto;*/
+        /*display: none;*/
+    /*}*/
+
+    /*#answerA.imgJWhite {*/
+        /*background-image: url("../images/Jack White.jpg");*/
+    /*}*/
+
+    #answerButtons {
+        text-align: center;
+    }
 
     #endgameModal {
         background-color: #e000e0;
