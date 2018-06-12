@@ -98,38 +98,46 @@
 
     #answerA {
         float: left;
-        margin-left: 4vw;
+        margin-left: 10vw;
+        width: 17vw;
     }
 
     #answerAText {
         float: left;
-        margin-left: 4vw;
+        margin-left: 10vw;
+        width: 17vw;
     }
 
     #answerB {
         float: left;
+        width: 17vw;
     }
 
     #answerBText {
         float: left;
+        width: 17vw;
     }
 
     #answerC {
         float: right;
-        margin-right: 4vw;
+        margin-right: 10vw;
+        width: 17vw;
     }
 
     #answerCText {
         float: right;
-        margin-right: 4vw;
+        margin-right: 10vw;
+        width: 17vw;
     }
 
     #answerD {
         float: right;
+        width: 17vw;
     }
 
     #answerDText {
         float: right;
+        width: 17vw;
     }
 
     #answerButtons {
