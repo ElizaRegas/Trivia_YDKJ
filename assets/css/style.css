@@ -13,8 +13,8 @@
 /* CLASS STYLING */
 
     .answerText {
-        width: 18vw;
-        margin: -1vw 3vw;
+        width: 20vw;
+        margin: -1vw 1.8vw 0vw 1.8vw;
         height: auto;
         box-shadow: 0 6px 6px rgb(22, 22, 22), 0 4px 4px rgb(22, 22, 22);
         text-align: center;
@@ -26,8 +26,8 @@
     }
 
     .button {
-        width: 18vw;
-        margin: 1vw 3vw 2vw 3vw;
+        width: 20vw;
+        margin: 1.8vw;
         height: auto;
         box-shadow: 0 6px 6px rgb(22, 22, 22), 0 4px 4px rgb(22, 22, 22);
     }
@@ -98,14 +98,16 @@
 
     #answerA {
         float: left;
+        margin-left: 4vw;
     }
 
     #answerAText {
         float: left;
+        margin-left: 4vw;
     }
 
     #answerB {
-    float: left;
+        float: left;
     }
 
     #answerBText {
@@ -113,15 +115,17 @@
     }
 
     #answerC {
-    float: right;
+        float: right;
+        margin-right: 4vw;
     }
 
     #answerCText {
         float: right;
+        margin-right: 4vw;
     }
 
     #answerD {
-    float: right;
+        float: right;
     }
 
     #answerDText {
@@ -260,7 +264,7 @@
         width: 94%;
         margin: 1vw 3vw 3vw 3vw;
         text-align: center;
-        font-size: 3vw;
+        font-size: 2.5vw;
         font-family: 'Open Sans', cursive;
         box-shadow: 0 6px 6px rgb(59, 59, 59), 0 4px 4px rgb(59, 59, 59);
         text-shadow: 0 6px 6px rgb(59, 59, 59), 0 4px 4px rgb(59, 59, 59);

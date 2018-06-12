@@ -214,7 +214,7 @@ $(document).ready(function() {
 // CLICK ON BUTTON TO PAUSE
     $("#pause").click(function() {
         stopwatch.stop();
-        // $('#questionPageDiv').hide();
+        $('#questionPageDiv').hide();
     });
 
 // CLICK ON BUTTON TO RESUME
@@ -233,6 +233,9 @@ $(document).ready(function() {
         $(".button").click(function(){
             return false;
         });
+        $("#quizDiv").click(function(){
+            return false;
+        });
     }
 
     function disablePause() {
@@ -242,6 +245,9 @@ $(document).ready(function() {
 // ENABLE BUTTONS
     function enableButtons() {
         $(".button").click(function(){
+            return true;
+        });
+        $("#quizDiv").click(function(){
             return true;
         });
     }
