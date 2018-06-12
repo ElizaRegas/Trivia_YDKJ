@@ -1,0 +1,174 @@
+/*!* MAIN STYLING *!*/
+
+/*body {*/
+    /*background-image: url("../images/colorbackground.jpg");*/
+    /*background-size: cover;*/
+/*}*/
+
+/*!* CLASS STYLING *!*/
+
+/*.button {*/
+    /*text-align: center;*/
+    /*width: 16vw;*/
+    /*margin: 3vw;*/
+    /*height: 8vw;*/
+/*}*/
+
+/*.jack {*/
+    /*width: 8vw;*/
+    /*height: auto;*/
+    /*margin: 1.5vw;*/
+    /*box-shadow: 0 6px 6px rgb(22, 22, 22), 0 4px 4px rgb(22, 22, 22);*/
+/*}*/
+
+/*.modal {*/
+    /*height: 100px;*/
+    /*width: auto;*/
+/*}*/
+
+/*!* ID STYLING *!*/
+
+/*#answerA {*/
+/*}*/
+
+/*!*#jackNicholson {*!*/
+/*!*background-image: url("../images/Jack Nicholson.jpg");*!*/
+/*!*width: 5vw;*!*/
+/*!*height: auto;*!*/
+/*!*display: none;*!*/
+/*!*}*!*/
+
+/*!*#answerA.imgJWhite {*!*/
+/*!*background-image: url("../images/Jack White.jpg");*!*/
+/*!*}*!*/
+
+/*#answerButtons {*/
+    /*text-align: center;*/
+/*}*/
+
+/*#endgameModal {*/
+    /*background-color: #e000e0;*/
+    /*display: none;*/
+/*}*/
+
+/*#gameoverModal {*/
+    /*background-color: #7379ff;*/
+    /*display: none;*/
+/*}*/
+
+/*#header {*/
+    /*color: white;*/
+    /*height: 10vw;*/
+    /*width: auto;*/
+    /*margin: 3vw;*/
+    /*text-align: center;*/
+    /*padding: 3vw 0vw 0vw 0vw;*/
+    /*font-size: 8vw;*/
+    /*font-family: 'Ruthie', cursive;*/
+    /*border: 2px white solid;*/
+    /*box-shadow: 0 6px 6px rgb(59, 59, 59), 0 4px 4px rgb(59, 59, 59);*/
+    /*text-shadow: 0 6px 6px rgb(59, 59, 59), 0 4px 4px rgb(59, 59, 59);*/
+/*}*/
+
+/*#largeWidth {*/
+    /*display: block;*/
+/*}*/
+
+/*#loseModal {*/
+    /*background-color: #ff062b;*/
+    /*display: none;*/
+/*}*/
+
+/*#playagainModal {*/
+    /*background-color: orange;*/
+    /*display: none;*/
+/*}*/
+
+/*#questionDiv {*/
+    /*background-color: transparent;*/
+    /*font-family: 'Open Sans', sans-serif;*/
+    /*color: white;*/
+    /*height: 7vw;*/
+    /*width: 94%;*/
+    /*margin: 3vw;*/
+    /*padding: 2vw 0vw 0vw 0vw;*/
+    /*text-align: center;*/
+    /*font-size: 2vw;*/
+    /*box-shadow: 0 6px 6px rgb(59, 59, 59), 0 4px 4px rgb(59, 59, 59);*/
+    /*text-shadow: 0 6px 6px rgb(59, 59, 59), 0 4px 4px rgb(59, 59, 59);*/
+/*}*/
+
+/*#questionPageDiv {*/
+    /*!*display: block;*!*/
+    /*display: none;*/
+/*}*/
+
+/*#quizDiv {*/
+/*}*/
+
+/*#resultsDiv {*/
+/*}*/
+
+/*#rowOne {*/
+    /*text-align: center;*/
+/*}*/
+
+/*#rowTwo {*/
+    /*text-align: center;*/
+/*}*/
+
+/*#rowThree {*/
+    /*text-align: center;*/
+/*}*/
+
+/*#rowFour {*/
+    /*text-align: center;*/
+/*}*/
+
+/*#smallWidth {*/
+    /*display: none;*/
+/*}*/
+
+/*#startPage {*/
+    /*background-color: transparent;*/
+    /*color: white;*/
+    /*height: 7vw;*/
+    /*width: 94%;*/
+    /*margin: 1vw 3vw 3vw 3vw;*/
+    /*text-align: center;*/
+    /*font-size: 4vw;*/
+    /*font-family: 'Ruthie', cursive;*/
+    /*box-shadow: 0 6px 6px rgb(59, 59, 59), 0 4px 4px rgb(59, 59, 59);*/
+    /*text-shadow: 0 6px 6px rgb(59, 59, 59), 0 4px 4px rgb(59, 59, 59);*/
+/*}*/
+
+/*#startPageDiv {*/
+    /*!*display: none;*!*/
+/*}*/
+/*#timeoutModal {*/
+    /*background-color: yellow;*/
+    /*display: none;*/
+/*}*/
+
+/*#winModal {*/
+    /*background-color: #00d500;*/
+    /*display: none;*/
+/*}*/
+
+/*!* MEDIA QUERIES *!*/
+
+/*@media (max-width:800px) {*/
+
+    /*.jack {*/
+        /*width: 18vw;*/
+    /*}*/
+
+    /*#largeWidth {*/
+        /*display: none;*/
+    /*}*/
+
+    /*#smallWidth {*/
+        /*display: block;*/
+    /*}*/
+
+/*}*/

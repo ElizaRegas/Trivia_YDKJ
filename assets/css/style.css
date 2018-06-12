@@ -5,13 +5,37 @@
         background-size: cover;
     }
 
+    h1 {
+        margin-right: 7vw;
+        font-size: 7.5vw;
+    }
+
 /* CLASS STYLING */
 
-    .button {
+    .answerText {
+        width: 18vw;
+        margin: -1vw 3vw;
+        height: auto;
+        box-shadow: 0 6px 6px rgb(22, 22, 22), 0 4px 4px rgb(22, 22, 22);
         text-align: center;
-        width: 16vw;
-        margin: 3vw;
-        height: 8vw;
+        color: white;
+        padding: 1vw 0vw;
+        font-size: 1.25vw;
+        font-family: 'Open Sans';
+        text-shadow: 0 6px 6px rgb(59, 59, 59), 0 4px 4px rgb(59, 59, 59);
+    }
+
+    .button {
+        width: 18vw;
+        margin: 1vw 3vw 2vw 3vw;
+        height: auto;
+        box-shadow: 0 6px 6px rgb(22, 22, 22), 0 4px 4px rgb(22, 22, 22);
+    }
+
+    .info {
+        padding: 2vw;
+        font-size: 2vw;
+        text-shadow: 0 6px 6px rgb(59, 59, 59), 0 4px 4px rgb(59, 59, 59);
     }
 
     .jack {
@@ -21,48 +45,118 @@
         box-shadow: 0 6px 6px rgb(22, 22, 22), 0 4px 4px rgb(22, 22, 22);
     }
 
+    .jackPic {
+
+    }
+
+    .loseButton {
+        box-shadow:0px 0px 0px 10px red inset;
+    }
+
     .modal {
-        height: 100px;
-        width: auto;
+        margin: -21vw;
+        height: 7vw;
+        text-align: center;
+        padding: 1vw 0vw 4vw 0vw;
+        font-size: 10vw;
+        color: white;
+        font-family: 'Ruthie';
+        text-shadow: 0 6px 6px rgb(22, 22, 22), 0 4px 4px rgb(59, 59, 59);
+    }
+
+    .pauseResume {
+        background-color: rgba(177, 0, 0, 0.25);
+        box-shadow: 0 6px 6px rgb(22, 22, 22), 0 4px 4px rgb(22, 22, 22);
+        text-shadow: 0 6px 6px rgb(59, 59, 59), 0 4px 4px rgb(59, 59, 59);
+        color: white;
+        font-family: 'Open Sans';
+        height: 5vw;
+        width: 5vw;
+        text-align: center;
+        font-size: 1vw;
+    }
+    .scoreDiv {
+        height: 5vw;
+        margin: 2.5vw 1.25vw;
+        width: 27.4vw;
+        float: left;
+        text-align: center;
+        font-size: 1.5vw;
+        padding: 2vw 1vw 0vw 1vw;
+        color: white;
+        font-family: 'Open Sans';
+        box-shadow: 0 6px 6px rgb(22, 22, 22), 0 4px 4px rgb(22, 22, 22);
+        text-shadow: 0 6px 6px rgb(59, 59, 59), 0 4px 4px rgb(59, 59, 59);
+        background-color: rgba(177, 0, 0, 0.25);
+    }
+
+    .winButton {
+        box-shadow:0px 0px 0px 10px green inset;
     }
 
 /* ID STYLING */
 
     #answerA {
+        float: left;
     }
 
-    /*#jackNicholson {*/
-        /*background-image: url("../images/Jack Nicholson.jpg");*/
-        /*width: 5vw;*/
-        /*height: auto;*/
-        /*display: none;*/
-    /*}*/
+    #answerAText {
+        float: left;
+    }
 
-    /*#answerA.imgJWhite {*/
-        /*background-image: url("../images/Jack White.jpg");*/
-    /*}*/
+    #answerB {
+    float: left;
+    }
+
+    #answerBText {
+        float: left;
+    }
+
+    #answerC {
+    float: right;
+    }
+
+    #answerCText {
+        float: right;
+    }
+
+    #answerD {
+    float: right;
+    }
+
+    #answerDText {
+        float: right;
+    }
 
     #answerButtons {
         text-align: center;
     }
 
+    #answerInfo {
+        clear: both;
+    }
+
+    #correctAnswers {
+        margin-left: 3vw;
+    }
+
     #endgameModal {
-        background-color: #e000e0;
+        background-color: rgba(10, 12, 255, 0.7);
         display: none;
     }
 
     #gameoverModal {
-        background-color: #7379ff;
+        background-color: rgba(10, 12, 255, 0.7);
         display: none;
     }
 
     #header {
         color: white;
-        height: 10vw;
+        height: 5vw;
         width: auto;
         margin: 3vw;
         text-align: center;
-        padding: 3vw 0vw 0vw 0vw;
+        padding: 1vw 0vw 2.5vw 0vw;
         font-size: 8vw;
         font-family: 'Ruthie', cursive;
         border: 2px white solid;
@@ -70,13 +164,43 @@
         text-shadow: 0 6px 6px rgb(59, 59, 59), 0 4px 4px rgb(59, 59, 59);
     }
 
+    #jackBlack,
+    #jackieChan,
+    #jackieCollins,
+    #jackDempsey,
+    #jackDorsey,
+    #jackieGleeson,
+    #jackHanna,
+    #jackJohnsonBoxer,
+    #jackJohnsonMusician,
+    #jackKerouac,
+    #jackKevorkian,
+    #jackLemmon,
+    #jackLondon,
+    #jackNicholson,
+    #jackNicklaus,
+    #jackieOnassis,
+    #jackOsbourne,
+    #jackSparrow,
+    #jacktheRipper,
+    #jackWhite {
+        width: 13vw;
+    }
+
     #largeWidth {
         display: block;
     }
 
     #loseModal {
-        background-color: #ff062b;
+        background-color: rgba(177, 0, 0, 0.7);
         display: none;
+    }
+
+    #pause {
+        float: left;
+        margin-left: 2%;
+        margin-top: .7vw;
+        padding: 0vw;
     }
 
     #playagainModal {
@@ -88,14 +212,15 @@
         background-color: transparent;
         font-family: 'Open Sans', sans-serif;
         color: white;
-        height: 7vw;
+        height: auto;
         width: 94%;
-        margin: 3vw;
-        padding: 2vw 0vw 0vw 0vw;
+        margin: 1vw 3vw;
+        padding: 2vw 0vw;
         text-align: center;
-        font-size: 2vw;
+        font-size: 2.5vw;
         box-shadow: 0 6px 6px rgb(59, 59, 59), 0 4px 4px rgb(59, 59, 59);
         text-shadow: 0 6px 6px rgb(59, 59, 59), 0 4px 4px rgb(59, 59, 59);
+        background-color: rgba(177, 0, 0, 0.25);
     }
 
     #questionPageDiv {
@@ -107,20 +232,19 @@
     }
 
     #resultsDiv {
+        clear: both;
     }
 
-    #rowOne {
-        text-align: center;
+    #resume {
+        float: right;
+        margin-right: 2%;
+        margin-top: -6.8vw;
+        padding: 0vw;
     }
 
-    #rowTwo {
-        text-align: center;
-    }
-
-    #rowThree {
-        text-align: center;
-    }
-
+    #rowOne,
+    #rowTwo,
+    #rowThree,
     #rowFour {
         text-align: center;
     }
@@ -136,8 +260,8 @@
         width: 94%;
         margin: 1vw 3vw 3vw 3vw;
         text-align: center;
-        font-size: 4vw;
-        font-family: 'Ruthie', cursive;
+        font-size: 3vw;
+        font-family: 'Open Sans', cursive;
         box-shadow: 0 6px 6px rgb(59, 59, 59), 0 4px 4px rgb(59, 59, 59);
         text-shadow: 0 6px 6px rgb(59, 59, 59), 0 4px 4px rgb(59, 59, 59);
     }
@@ -145,13 +269,17 @@
     #startPageDiv {
         /*display: none;*/
     }
+
     #timeoutModal {
-        background-color: yellow;
+        background-color: rgba(177, 167, 0, 0.71);
         display: none;
     }
 
+    #timeRemaining {
+    }
+
     #winModal {
-        background-color: #00d500;
+        background-color: rgba(2, 88, 19, .7);
         display: none;
     }
 

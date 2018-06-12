@@ -23,7 +23,9 @@
     <body>
 
         <header id="header">
+            <button class="pauseResume" id="pause">Pause</button>
             <h1>You Don't Know Jack</h1>
+            <button class="pauseResume" id="resume">Resume</button>
         </header>
 
     <!-- START PAGE DIV -->
@@ -33,24 +35,24 @@
             </div>
             <div id="largeWidth">
                 <div id="rowOne">
-                    <img src="assets/images/JackBlack.jpg" class="jack">
-                    <img src="assets/images/JackDempsey.jpg" class="jack">
-                    <img src="assets/images/JackDorsey.jpg" class="jack">
-                    <img src="assets/images/JackHanna.png" class="jack">
+                    <img src="assets/images/JackWhite.jpg" class="jack">
                     <img src="assets/images/JackJohnsonBoxer.jpg" class="jack">
+                    <img src="assets/images/JackieOnassis.jpg" class="jack">
+                    <img src="assets/images/JackNicholson.jpg" class="jack">
+                    <img src="assets/images/JackBlack.jpg" class="jack">
                     <img src="assets/images/JackJohnsonMusician.jpg" class="jack">
                     <img src="assets/images/JackKerouac.jpg" class="jack">
-                    <img src="assets/images/JackKevorkian.jpg" class="jack">
+                    <img src="assets/images/JackLemmon.jpg" class="jack">
                 </div>
                 <div id="rowTwo">
-                    <img src="assets/images/JackLemmon.jpg" class="jack">
-                    <img src="assets/images/JackLondon.jpg" class="jack">
-                    <img src="assets/images/JackNicholson.jpg" class="jack">
-                    <img src="assets/images/JackNicklaus.jpg" class="jack">
-                    <img src="assets/images/JackOsbourne.jpg" class="jack">
+                    <img src="assets/images/JackKevorkian.jpg" class="jack">
+                    <img src="assets/images/JackHanna.png" class="jack">
                     <img src="assets/images/JackSparrow.jpg" class="jack">
-                    <img src="assets/images/JackWhite.jpg" class="jack">
-                    <img src="assets/images/JackieOnassis.jpg" class="jack">
+                    <img src="assets/images/JackDorsey.jpg" class="jack">
+                    <img src="assets/images/JackOsbourne.jpg" class="jack">
+                    <img src="assets/images/JackieCollins.jpg" class="jack">
+                    <img src="assets/images/JackNicklaus.jpg" class="jack">
+                    <img src="assets/images/JackDempsey.jpg" class="jack">
                 </div>
             </div>
             <div id="smallWidth">
@@ -86,40 +88,36 @@
         <div id="questionPageDiv">
             <div id="quizDiv">
                 <div id="questionDiv"></div>
-                    <div id="answerButtons">
-                        <div class="button" id="answerA">
-                            <!--<img src="assets/images/JackNicholson.jpg" id="jackNicholson">-->
-                            <!--<div id="jackNicholson"></div>-->
-                        </div>
-                            <!--<div>-->
-                                <!--<img src="assets/images/Jack%20Osbourne.jpg" id="jackOsbourne" style="display: none">-->
-                            <!--</div>-->
-                        <button class="button" id="answerB"></button>
-                        <button class="button" id="answerC"></button>
-                        <button class="button" id="answerD"></button>
-                    </div>
-
-                <div>
-                    <button id="pause">Pause</button>
-                    <button id="resume">Resume</button>
+                <div id="answerButtons">
+                    <div class="button" id="answerA"></div>
+                    <div class="button" id="answerB"></div>
+                    <div class="button" id="answerC"></div>
+                    <div class="button" id="answerD"></div>
+                </div>
+                <div id="answerInfo">
+                    <div class="answerText" id="answerAText">Holder</div>
+                    <div class="answerText" id="answerBText">Holder</div>
+                    <div class="answerText" id="answerCText">Holder</div>
+                    <div class="answerText" id="answerDText">Holder</div>
                 </div>
             </div>
 
             <div id="resultsDiv">
 
+                <div class="scoreDiv" id="correctAnswers">Correct Answers:
+                    <span class="info" id="correctCount">0</span>
+                </div>
                 <!-- TIMER -->
-                <div id="timeRemaining">Time Remaining:
-                    <div id="timerDiv">00:00</div>
+                <div class="scoreDiv" id="timeRemaining">Time Remaining:
+                    <span class="info" id="timerDiv">00:00</span>
                 </div>
 
-                <div id="correctAnswers">Correct Answers:
-                    <div id="correctCount">0</div>
+                <div class="scoreDiv" id="incorrectAnswers">Incorrect Answers:
+                    <span class="info" id="incorrectCount">0</span>
                 </div>
 
-                <div id="incorrectAnswers">Incorrect Answers:
-                    <div id="incorrectCount">0</div>
-                </div>
             </div>
+
         </div>
     <!-- END QUESTION PAGE DIV -->
 
@@ -132,7 +130,7 @@
 
         <!-- LOSE MODAL -->
         <div id="loseModal" class="modal">
-            Nope!
+            Incorrect!
         </div>
 
         <!-- TIMEOUT MODAL -->
